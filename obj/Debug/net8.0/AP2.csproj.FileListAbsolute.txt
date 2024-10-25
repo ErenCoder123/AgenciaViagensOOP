@@ -12,3 +12,4 @@ C:\Users\miguel\Documents\facul\aulasC\AP2\AP2\obj\Debug\net8.0\refint\AP2.dll
 C:\Users\miguel\Documents\facul\aulasC\AP2\AP2\obj\Debug\net8.0\AP2.pdb
 C:\Users\miguel\Documents\facul\aulasC\AP2\AP2\obj\Debug\net8.0\AP2.genruntimeconfig.cache
 C:\Users\miguel\Documents\facul\aulasC\AP2\AP2\obj\Debug\net8.0\ref\AP2.dll
+c:\Users\miguel\Documents\facul\aulasC\AP2\AP2\obj\Debug\net8.0\AP2.sourcelink.json

@@ -1,31 +1,80 @@
 public class Destino
 {
-    public string NomeLocal { get; set; }
-    public string Pais { get; set; }
-    public string Codigo { get; set; }
-    public string Descricao { get; set; }
+    private string nomeLocal;
+    private string pais;
+    private string codigo;
+    private string descricao;
 
+    
     public Destino(string nomelocal, string pais, string codigo, string descricao)
     {
-        NomeLocal = nomelocal;
-        Pais = pais;
-        Codigo = codigo;
-        Descricao = descricao;
+        this.nomeLocal = nomelocal;
+        this.pais = pais;
+        this.codigo = codigo;
+        this.descricao = descricao;
+    }
+
+    public string NomeLocal
+    {
+        get { return nomeLocal; }
+        set 
+        { 
+            if (!string.IsNullOrEmpty(value))
+            {
+                nomeLocal = value;
+            }
+        }
+    }
+
+    public string Pais
+    {
+        get { return pais; }
+        set 
+        { 
+            if (!string.IsNullOrEmpty(value)) 
+            {
+                pais = value;
+            }
+        }
+    }
+
+    public string Codigo
+    {
+        get { return codigo; }
+        set 
+        { 
+            if (!string.IsNullOrEmpty(value)) 
+            {
+                codigo = value;
+            }
+        }
+    }
+
+    public string Descricao
+    {
+        get { return descricao; }
+        set 
+        { 
+            if (!string.IsNullOrEmpty(value)) 
+            {
+                descricao = value;
+            }
+        }
     }
 
     public void ExibirInformacoes()
     {
         Console.WriteLine("Informações do Destino:");
-        Console.WriteLine($"\nDestino: {NomeLocal}\nPais: {Pais}\nCódigo: {Codigo}\nDescrição: {Descricao}");
+        Console.WriteLine($"\nDestino: {nomeLocal}\nPais: {pais}\nCódigo: {codigo}\nDescrição: {descricao}");
     }
 
-    public string PequisarPorCodigo()
+    public string PesquisarPorCodigo()
     {
-        return Codigo;
+        return codigo;
     }
 
     public string PesquisarPorDestino()
     {
-        return Pais;
+        return pais;
     }
 }

@@ -47,7 +47,7 @@ public class PacoteTuristico : ServicoViagem
         return Codigo;
     }
 
-        public Destino PesquisarPorDestino()
+    public Destino PesquisarPorDestino()
     {
         return Destino;
     }
