@@ -35,7 +35,7 @@ public class Agencia
         Console.WriteLine($"Destino {destino.NomeLocal} cadastrado.");
     }
 
-    public Destino ConsultarDestinoPorCodigo(string codigo)
+    public Destino? ConsultarDestinoPorCodigo(string codigo)
     {
         foreach (var destino in Destinos)
         {

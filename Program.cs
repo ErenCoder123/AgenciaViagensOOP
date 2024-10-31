@@ -4,15 +4,15 @@ var clientes = new List<Cliente>();
 var pacotes = new List<PacoteTuristico>();
 var reservas = new List<Reserva>();
 
+//istanciadno agencia
+var agencia1 = new Agencia(destinos, clientes, pacotes, reservas);
+Console.WriteLine();
+
 //instanciando destinos
 var paris = new Destino("Paris", "França", "3", "cidade linda paris");
 paris.ExibirInformacoes();
 var berlin = new Destino("Berlin", "Alemanha", "4", "cidade linda berlin");
 berlin.ExibirInformacoes();
-
-//istanciadno agencia
-var agencia1 = new Agencia(destinos, clientes, pacotes, reservas);
-Console.WriteLine();
 
 //instanciando clientes
 var cliente1 = new Cliente("cleitinho", "1", "123456789", agencia1);
